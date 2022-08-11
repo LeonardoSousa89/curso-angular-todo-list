@@ -1,8 +1,9 @@
 <section>
     <ul>
-        <li>
-            <input type="checkbox">
-            <input type="text">
+        <li *ngFor="let item of taskList; let i = index">
+            <!-- esse trecho abaixo está, gerando erro  { aula - hands-on 7 } -->
+            <!-- <input type="checkbox" [(ngModel)]="item.checked">
+            <input type="text"     [(ngModel)]="item.task"> -->
             <button>
                 <img src="../../../../../assets/icons/icon-trash.svg" alt="">
             </button>
