@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from './modules/home/components/todo-list/todo-list.component';
 import { TodoInputAddItensComponent } from './modules/home/components/todo-input-add-itens/todo-input-add-itens.component';
 import { HeaderComponent } from './modules/home/components/header/header.component';
@@ -23,7 +24,8 @@ import { HomeComponent } from './modules/home/pages/home/home.component';
  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
