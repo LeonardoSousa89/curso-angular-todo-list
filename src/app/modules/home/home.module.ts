@@ -15,15 +15,15 @@ import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    TodoButtonDeleteAllComponent,
-    TodoInputAddItensComponent,
-    TodoListComponent,
-    HomeComponent
+    // HeaderComponent,
+    // TodoButtonDeleteAllComponent,
+    // TodoInputAddItensComponent,
+    // TodoListComponent,
+    // HomeComponent
   ],
   imports: [
-    CommonModule,
-    FormsModule
+    // CommonModule,
+    // FormsModule
   ]
 })
 export class HomeModule { }
