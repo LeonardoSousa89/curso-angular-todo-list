@@ -10,17 +10,18 @@ import { TaskList } from '../../model/task-list';
 })
 export class TodoListComponent implements OnInit {
 
-  public taskList: Array<TaskList> = [
-    // {task:"my task",checked:true},
-    // {task:"my task 2",checked:false}
-  ]
+  public taskList: Array<TaskList> = []
 
   public deleteItemTaskList(event: number){
     this.taskList.splice(event, 1)
   }
 
   public deleteAllTaskList(){
-    this.taskList = []
+    const confirm = window.confirm("Realmente você deseja deletar tudo?")
+
+    if(confirm){
+      this.taskList = []
+    }
   }
 
   constructor() { }
